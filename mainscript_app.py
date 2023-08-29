@@ -29,6 +29,12 @@ st.metric(label="Temp",value="273 K",delta="1.2 K")
 
 st.subheader('Wat input widgets')
 c1,c2,c3=st.columns(3)
-c1=st.button("Click me")
-c2=st.checkbox("I agree")
-c3=st.toggle("Activate")
+with c1:
+    st.button("Click me")
+with c2:
+    st.checkbox("I agree")
+with c3:
+    st.toggle("Activate")
+
+st.text_input("Tekst toevoegen")
+st.sidebar.write("This lives in the sidebar")
