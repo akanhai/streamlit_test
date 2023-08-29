@@ -23,6 +23,6 @@ df = pd.DataFrame(
 )
 edited_df = st.data_editor(df)
 
-st.table(data.iloc[0:10])
+st.table([[1,2],[3,4]])
 st.json({'foo':'bar','fu':'ba'})
 st.metric(label="Temp",value="273 K",delta="1.2 K")
