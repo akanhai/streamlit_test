@@ -2,9 +2,10 @@ import streamlit as st
 import pandas as pd
 
 st.title('Dit is mijn titel')
-st.header('1 Dit is mijn eerste kop')
 st.divider()
-st.subheader('Dit is een subkop')
+st.header('1 Dit is mijn eerste kop',divider='orange')
+
+st.subheader('Dit is een subkop',help='Je kunt ook wat extra info tonen')
 st.caption('Een caption is een onderschrift')
 st.text('Zo schrijf je normale tekst')
 st.write('Andere manier van schrijven, kan meerdere datatypes in 1 bevatten')
